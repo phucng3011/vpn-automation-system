@@ -1,0 +1,19 @@
+vpn_devices:
+  - name: Site-A
+    host: 192.168.1.1
+    username: admin
+    password: admin123
+
+  - name: Site-B
+    host: 192.168.2.1
+    username: admin
+    password: admin123
+
+check_targets:
+  - name: Remote LAN
+    ip: 192.168.2.10
+
+interval: 15
+
+alert:
+  enable: true
